@@ -10,17 +10,17 @@ body {
 
 @font-face {
     font-family: RustBook;
-    src: url(../Fonts/OTF/IntroRustBook-Trial-FillG.otf);
+    src: url(./Fonts/OTF/IntroRustBook-Trial-FillG.otf);
 }
 
 @font-face {
     font-family: Chivo;
-    src: url(../Fonts/Chivo/);
+    src: url(./Fonts/Chivo/);
 }
 
 @font-face {
     font-family: Tinos;
-    src: url(../Fonts/Tinos/);
+    src: url(./Fonts/Tinos/);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -108,7 +108,7 @@ p {
     position: relative;
     align-items: center;
     align-content: center;
-    background-image: url("../images/cover-background.png");
+    background-image: url("./images/cover-background.png");
     background-repeat: no-repeat;
     display: inline-flex;
 }
@@ -164,7 +164,7 @@ p {
     margin-top: 7rem;
     width: 100%;
     justify-items: center;
-    background-image:url("../images/about-me.png");
+    background-image:url("./images/about-me.png");
     background-repeat: no-repeat;
     text-align: center;
 }
