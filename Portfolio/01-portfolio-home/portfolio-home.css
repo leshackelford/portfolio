@@ -1,0 +1,341 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #f2e8df;
+    font-family: helvetica;
+    font-size: 1.4rem;
+    opacity: 0.9;
+}
+
+@font-face {
+    font-family: RustBook;
+    src: url(../Fonts/OTF/IntroRustBook-Trial-FillG.otf);
+}
+
+@font-face {
+    font-family: Chivo;
+    src: url(../Fonts/Chivo/);
+}
+
+@font-face {
+    font-family: Tinos;
+    src: url(../Fonts/Tinos/);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Chivo;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+p {
+    font-family: Tinos;
+}
+
+/*Header Section*/
+.header-container {
+    height: 6rem;
+    border-bottom: 1px solid whitesmoke;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    z-index: 100;
+    background-color: #183a37;
+}
+
+
+.header {
+    margin-left: auto;
+}
+
+.logo {
+    padding: 10px;
+    height: 50px;
+    display: inline-flex;
+    color: whitesmoke;
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+#logo-font, .logo {
+    font-family: RustBook;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+
+.menu-container {
+    height: 4rem;
+    position: fixed;
+    border-bottom: 1px solid whitesmoke;
+    width: 100%;
+    background-color: rgb(196, 73, 0);
+    padding-top: 5.5rem;
+    text-align: center;
+    z-index: 99;
+}
+
+.menu-item {
+    list-style: none;
+    color: wheat;
+    display: inline;
+    padding: 10px;
+    font-size: 1.2rem;
+    
+}
+
+.menu {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/*Cover Section*/
+.cover-container {
+    padding-top: 7rem;
+    width: 100%;
+    top: 69px;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    background-image: url("../images/cover-background.png");
+    background-repeat: no-repeat;
+    display: inline-flex;
+}
+
+.header-content {
+    color: brown;
+    max-width: 100%;
+    text-align: center;
+    margin-left: auto; 
+}
+
+.welcome {
+    max-width: 40rem;
+    color: wheat;
+    padding: 15px 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    height: 3em;
+    width: 10em;
+    border: 1px solid #f5deb3;
+}
+
+.button-format {
+    color: wheat;
+    text-decoration: none;
+}
+
+.headshot {
+    width: 50%;
+    margin-left: auto; 
+    margin-right: 0;
+    padding: 2rem; 
+}
+
+.lauren {
+    max-width: 50%;
+    height: auto;
+    border-bottom-left-radius: 80px 80px;
+    display: block;
+    margin: auto;
+    /*box-shadow: 2px 1px black;
+    background-color: #183a37;*/
+    padding: 5rem 8rem 5rem 5rem;
+}
+
+.about-me-section {
+    color: brown;
+    margin-top: 7rem;
+    width: 100%;
+    justify-items: center;
+    background-image:url("../images/about-me.png");
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.marketing-principles {
+    list-style: none;
+    color: wheat;
+    background-color: brown;
+    font-size: 2.5rem;
+    padding: 0 1rem;
+}
+
+.about-me-p {
+    max-width: 45rem;
+    background-color: #432534;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+/*Project Fav Section*/
+
+.project-fav-header {
+    margin-top: 8rem;
+    text-align: center;
+    color: brown;
+}
+
+.project-fav-section {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+.header-font {
+    font-size: 2rem;
+}
+
+.project-faves {
+    width: 100%;
+}
+
+.project-fav--blazing-rayo-image {
+    max-width: 25%;
+    height: auto;
+    margin-left: 10px;
+}
+
+
+.project-fav {
+    color: white;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-expo {
+    color: wheat;
+    padding: 3rem;
+    background-color: #432534;
+}
+
+.project-cta {
+    border: 1px solid wheat;
+    width: 12rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.project-cta-button {
+    color: wheat;
+}
+
+.project-paragraph {
+    width: 30rem;
+}
+
+#OG2019 {
+    padding-top: 5rem;
+}
+
+#dash-redesign {
+    padding-top: 5rem;
+}
+
+.project-fav-image {
+    max-width: 40%;
+    height: auto;
+}
+
+/*Contact Section*/
+
+.contact-section {
+    margin-top: 6rem;
+    text-align: center;
+    color: wheat;
+    align-items: center;
+}
+
+.get-in-touch {
+    background-color: #432534;
+    margin: auto;
+    width: 50%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.good-fit {
+    font-size: 3rem;
+}
+
+.email, .phone-number {
+    text-decoration: underline;
+    color: wheat;
+}
+
+.footer {
+    color: brown;
+}
+
+/* Media Queries */
+@media (max-width: 1050px) {
+    .menu ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .menu-item {
+        display: block;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+    .menu-container {
+        height: auto;
+    }
+
+    .header-content {
+        margin-top: 8rem;
+        width: 100%;
+    }
+
+    .project-fav, .cover-container {
+      flex-direction: column;
+    } 
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .cover-container {
+        align-items: center;
+    }
+
+    .headshot {
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .lauren {
+        max-width: 75%;
+    }
+  }

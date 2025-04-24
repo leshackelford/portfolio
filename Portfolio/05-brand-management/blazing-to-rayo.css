@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #f2e8df;
+    font-family: helvetica;
+    font-size: 1.4rem;
+    opacity: 0.9;
+}
+
+@font-face {
+    font-family: RustBook;
+    src: url(../Fonts/OTF/IntroRustBook-Trial-FillG.otf);
+}
+
+@font-face {
+    font-family: Chivo;
+    src: url(../Fonts/Chivo/);
+}
+
+@font-face {
+    font-family: Tinos;
+    src: url(../Fonts/Tinos/);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Chivo;
+
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: Tinos;
+}
+
+
+.header-container {
+    height: 6rem;
+    border-bottom: 1px solid whitesmoke;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    z-index: 100;
+    background-color: #183a37;
+}
+
+.logo {
+    padding: 10px;
+    height: 50px;
+    display: inline-flex;
+    color: whitesmoke;
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+#logo-font, .logo {
+    font-family: RustBook;
+}
+
+.logo-link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+
+.menu-container {
+    height: 4rem;
+    position: fixed;
+    border-bottom: 1px solid whitesmoke;
+    width: 100%;
+    background-color: rgb(196, 73, 0);
+    text-align: center;
+    z-index: 99;
+    padding-top: 5.5rem;
+}
+
+.menu-item {
+    list-style: none;
+    color: whitesmoke;
+    display: inline;
+    padding: 10px;
+    font-size: 1.2rem;
+    
+}
+
+.campaign {
+    background-color:#183a37;
+    text-decoration: none;
+    width: 50%;
+    margin: auto;
+}
+
+.campaign-item {
+    list-style: none;
+    color: wheat;
+    display: inline;
+    padding: 10px;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+}
+
+.menu {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.page-header-container {
+    padding-top: 10rem;
+    text-align: center;
+    color: brown;
+    padding-bottom: 2rem;
+}
+
+.intro {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.page-header-opener {
+    margin: auto;
+    width: 50%;
+    font-size: 1.25rem;
+    text-align: left;
+    color: #183a37;
+    border: 1px solid #183a37;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.writing-sample-section {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.writing-sample-row-1,
+.writing-sample-row-2 {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; 
+    margin: 1rem auto;
+    max-width: 1000px;
+}
+
+.writing-sample {
+    align-items: center;
+
+    justify-content: center;
+    justify-items: center;
+}
+
+.writing-sample h2 {
+    color: brown;
+}
+
+.writing-sample-image-1 {
+    height: 1061px;
+    width: 581px;
+}
+
+.writing-sample-image-2 {
+    height: 500px;
+    width: 600px;
+}
+
+.button {
+    border: 1px solid #432534;
+    height: 3em;
+    width: 10em;
+    align-content: center;
+    border-radius: .5rem;
+    color: #432534;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+.button-link {
+    color: #432534;
+    text-decoration: none;
+}
+
+/*Contact Me Section*/
+
+.contact-section {
+    margin-top: 5rem;
+    text-align: center;
+    color: wheat;
+    align-items: center;
+    background-image: url(../images/writing-samples.png);
+}
+
+.get-in-touch {
+    background-color: #432534;
+    margin: auto;
+    width: 50%;
+    padding-top: 1rem;
+    padding-bottom: .25rem;
+}
+
+.good-fit {
+    font-size: 3rem;
+}
+
+.email, .phone-number {
+    text-decoration: underline;
+    color: wheat;
+}
+
+.footer {
+    color: brown;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 1050px) {
+    .menu ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .menu-item {
+        display: block;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+    .menu-container {
+        height: auto;
+    }
+
+    .header-content {
+        margin-top: 8rem;
+        width: 100%;
+    }
+
+    .project-fav, .cover-container {
+      flex-direction: column;
+    } 
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .cover-container {
+        align-items: center;
+    }
+}

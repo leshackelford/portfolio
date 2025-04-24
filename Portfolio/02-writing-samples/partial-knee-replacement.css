@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #f2e8df;
+    font-family: helvetica;
+    font-size: 1.4rem;
+    opacity: 0.9;
+}
+
+@font-face {
+    font-family: RustBook;
+    src: url(../Fonts/OTF/IntroRustBook-Trial-FillG.otf);
+}
+
+@font-face {
+    font-family: Chivo;
+    src: url(../Fonts/Chivo/);
+}
+
+@font-face {
+    font-family: Tinos;
+    src: url(../Fonts/Tinos/);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Chivo;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-family: Tinos;
+}
+
+/*Menu*/
+
+.header-container {
+    height: 6rem;
+    border-bottom: 1px solid whitesmoke;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    z-index: 100;
+    background-color: #183a37;
+}
+
+
+.header {
+    margin-left: auto;
+}
+
+.logo {
+    padding: 10px;
+    height: 50px;
+    display: inline-flex;
+    color: whitesmoke;
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+#logo-font, .logo {
+    font-family: RustBook;
+}
+
+.logo-link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.menu-container {
+    height: 4rem;
+    position: fixed;
+    border-bottom: 1px solid whitesmoke;
+    width: 100%;
+    background-color: rgb(196, 73, 0);
+    padding-top: 5.5rem;
+    text-align: center;
+    z-index: 99;
+}
+
+.menu-item {
+    list-style: none;
+    color: wheat;
+    display: inline;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.menu {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/*Back Navigation*/
+
+.back-link {
+    color: #553845;
+    text-decoration: none;
+}
+
+.back-button {
+    padding-top: 12rem;
+    margin-left: 5rem;
+}
+
+/*Header*/
+
+.page-header-container, .page-header-opener {
+    width: 100%;
+    justify-items: center;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.title-image {
+    width: 100%;
+    max-width: 18rem;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+.button {
+    background-color: #553845;
+    height: 3em;
+    width: 10em;
+    align-content: center;
+    border-radius: .5rem;
+    color: #f2e8df;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+.body-container {
+    max-width: 70rem;
+    align-content: center;
+    margin: 1rem auto;
+}
+
+.contact-section {
+    margin-top: 5rem;
+    text-align: center;
+    color: wheat;
+    align-items: center;
+}
+
+.get-in-touch {
+    background-color: #432534;
+    margin: auto;
+    width: 50%;
+    padding-top: 1rem;
+    padding-bottom: .25rem;
+}
+
+.good-fit {
+    font-size: 3rem;
+}
+
+.email, .phone-number {
+    text-decoration: underline;
+    color: wheat;
+}
+
+.footer {
+    color: brown;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 1050px) {
+    .menu ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .menu-item {
+        display: block;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+    .menu-container {
+        height: auto;
+    }
+
+    .header-content {
+        margin-top: 8rem;
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .cover-container {
+        align-items: center;
+    }
+
+    .back-button {
+        padding-top: 20rem;
+    }
+}
